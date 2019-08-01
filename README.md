@@ -1,45 +1,23 @@
 # jspicl CLI
 jspicl CLI is a command line tool that simplifies PICO-8 game development in JavaScript.
 
-Features:
+**Features:**
 * Comes with its own set of build pipeline so you don't need one.
 * JavaScript to PICO-8 Lua transpilation through [jspicl](https://github.com/AgronKabashi/jspicl).
 * Treeshaking which prevents unused code from being included and increasing your token count.
 * Allows a PNG file to be used as a spritesheet, no need to edit your assets in PICO-8 anymore. Use your image editor of choice.
 * Live reloading of PICO-8 cartridge whenever code or spritesheet is updated. See your changes live!
 
-Future goals:
+**Future goals:**
 * Importing of audio files to be used as SFX or music.
 
 ## Installation
 
 ```Shell
-npm install jspicl-cli
+npm install jspicl-cli -D
 ```
-
-Include `-g` option if you want it globally available instead of a local copy.
 
 ## Usage
-
-To see what options are available simply run the CLI without any options:
-```Shell
-$ jspicl-cli
-Options:
-  --input                 Path to entry point  [required]
-  --output                Path the generated PICO-8 cardridge  [required]
-  --spritesheetImagePath  Path to a spritesheet  [required]
-  --cartridgePath         Path to existing cardridge  [required]
-  --includeBanner         Include jspicl info in code
-  --jsOutput              Path to JavaScript output
-  --luaOutput             Path to LUA output
-  --showStats             Display build stats
-  --pipeOutputToConsole   Output console.log to terminal
-  --reloadOnSave          Re-run cartridge when updated
-  --polyfillTransform     Path to a module that exports a transformation method
-  --customPicoPath        Path to PICO-8 executable
-  --prettify              Format LUA code
-  --watch                 Reload cartridge on rebuilds
-```
 
 In order to generate a cartridge you need to supply at least four mandatory options:
 
@@ -74,10 +52,12 @@ The CLI will listen for changes when the `--watch` option is passed.
 
 ![](https://i.imgur.com/QYj4Xga.gif)
 
-This applies for the spritesheet aswell. Simply update and save the image to reload to see your changes in PICO-8.
+This applies for the spritesheet aswell. Simply save your image and your changes will be reloaded in PICO-8.
 
 ![](https://github.com/AgronKabashi/assets/raw/814f6efe24bc9aca5d9d6ca6259279733529e300/rollup-plugin-jspicl/spritesheetLiveReload.gif)
 
+**NOTE:** Reloading the cartridge is currently only supported on MacOS.
+
 ## Other `jspicl` related projects
 * [jspicl](https://github.com/AgronKabashi/jspicl)
-* [Games](https://github.com/topics/jspicl-sample)
+* [Games made with jspicl](https://github.com/topics/jspicl-sample)

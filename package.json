@@ -1,6 +1,6 @@
 {
   "name": "jspicl-cli",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CLI for simplifying PICO-8 game development in JavaScript",
   "scripts": {
     "prepublishOnly": "npm t && npm start",
@@ -27,24 +27,24 @@
     "node": ">=12.0.0"
   },
   "devDependencies": {
-    "@agronkabashi/eslint-config": "^1.0.2",
-    "@babel/core": "^7.4.5",
+    "@agronkabashi/eslint-config": "^1.1.0",
+    "@babel/core": "^7.5.5",
     "@babel/polyfill": "^7.4.4",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/register": "^7.4.4",
-    "babel-eslint": "^10.0.1",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "babel-eslint": "^10.0.2",
     "chai": "^4.2.0",
-    "eslint": "^5.16.0",
+    "eslint": "^6.1.0",
     "mocha": "^5.2.0"
   },
   "dependencies": {
-    "chokidar": "^3.0.1",
-    "jspicl": "^2.4.0",
+    "chokidar": "^3.0.2",
+    "jspicl": "^2.4.2",
     "mkdirp": "^0.5.1",
     "pngjs": "^3.4.0",
-    "rollup": "^1.14.6",
-    "rollup-plugin-buble": "^0.19.6",
+    "rollup": "^1.18.0",
+    "rollup-plugin-buble": "^0.19.8",
     "rollup-plugin-includepaths": "^0.2.3",
-    "yargs": "^13.2.4"
+    "yargs": "^13.3.0"
   }
 }

@@ -213,6 +213,10 @@ function logSuccess (content) {
   logToConsole(ICONS.success, content);
 }
 
+function logWarning (content) {
+  logToConsole(ICONS.warning, content);
+}
+
 function logToConsole (icon, content) {
   console.log(`${icon} ${content}\x1b[0m`);
 }
@@ -307,7 +311,7 @@ function getSpritesheetFromImage (imagePath) {
 }
 
 const pico8PathMap = {
-  win32: "C:\\Program Files (x86)\\PICO-8\\pico8.exe",
+  win32: `"C:\\Program Files (x86)\\PICO-8\\pico8.exe"`, // eslint-disable-line quotes
   darwin: "/Applications/PICO-8.app/Contents/MacOS/pico8",
   linux: "~/pico-8/pico8"
 };
@@ -329,6 +333,9 @@ function createPico8Launcher ({ watch, customPicoPath, reloadOnSave, pipeOutputT
         // Currently only MacOS supports auto reloading when saving.
         logSuccess("Reloading cartridge in PICO-8");
         child_process.exec(`osascript "${path.join(__dirname, "reload-pico8.applescript")}"`);
+      }
+      else {
+        logWarning("Autoreloading is currently only supported on MacOS. Please press Ctrl+R in PICO-8 to see new changes.");
       }
     }
     else {
