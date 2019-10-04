@@ -1,5 +1,11 @@
 # Changelog
 
+## Version 0.3.0
+*2019-10-04*
+* Added Github CI action
+* Eslint configuration updated to address object spread errors
+* 3rd party dependencies updated.
+
 ## Version 0.2.1
 *2019-08-27*
 * Patch that addresses 3rd party dependency vulnerabilites.

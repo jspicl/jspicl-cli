@@ -9,7 +9,7 @@ jspicl CLI is a command line tool that simplifies PICO-8 game development in Jav
 * Live reloading of PICO-8 cartridge whenever code or spritesheet is updated. See your changes live!
 
 **Future goals:**
-* Importing of audio files to be used as SFX or music.
+* Importing audio files to be used as SFX or music.
 
 ## Installation
 
