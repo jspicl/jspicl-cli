@@ -1,5 +1,10 @@
 # Changelog
 
+## Version 0.4.0
+*2020-03-01*
+* JSPICL updated.
+* 3rd party dependencies updated.
+
 ## Version 0.3.0
 *2019-10-04*
 * Added Github CI action
