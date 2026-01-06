@@ -1,3 +1,6 @@
+# UPDATE 2025-12-25
+The CLI will be included as part of JSPICL moving forward. Please follow https://github.com/jspicl/jspicl for updates
+
 # jspicl CLI
 jspicl CLI is a command line tool that simplifies PICO-8 game development in JavaScript.
 
